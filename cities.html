@@ -54,18 +54,18 @@
 <p>They break first because the city names grid columns are for the medium devices
      but the Letters gird are for the small devices so the city names break 
      when we reduce the screen to small but the letters does not break as they were assigned small grid columns.</p>
-<div class="container">
-    <img class="img-fluid" src="rome.jpg" height="450px" width="450px" alt="romeimg">
-    <img class="img-fluid" src="albany.jpg" height="450px" width="450px" alt="albanyimg">
-    <img class="img-fluid" src="cannes.jpg" height="450px" width="450px" alt="cannesimg">
+<div class="img-container">
+    <img class="img-fluid" src="rome.jpg" height="400px" width="400px" alt="romeimg">
+    <img class="img-fluid" src="albany.jpg" height="400px" width="400px" alt="albanyimg">
+    <img class="img-fluid" src="cannes.jpg" height="400px" width="400px" alt="cannesimg">
 </div>
-<div class="container">
+<div class="img-container">
     <img  class="img-thumbnail" src="rome.jpg" height="400px" width="400px" alt="romeimg">
     <img  class="img-thumbnail" src="albany.jpg" height="400px" width="400px" alt="albanyimg">
     <img  class="img-thumbnail" src="cannes.jpg" height="400px" width="400px" alt="cannesimg">
 </div>
 
-<table class="table table-responsive table-striped table-dark table-bordered table-hover table-condensed">
+<table class="table table-responsive table-striped table-dark table-bordered table-hover table-condensed caption-top">
     <caption>Cities table</caption>
     <thead class="thead-dark">
         <tr>
@@ -115,17 +115,19 @@
     </tbody>
 </table>
 <h4>Buttons and Button groups</h3>
-<div class="btn-group btn-toolbar">
+  <div class="btn-toolbar">
+<div class="btn-group btn-toolbar" role="group">
 <button type="button" class="btn btn-success">R</button>
 <button type="button" class="btn btn-success">A</button>
+<button type="button" class="btn btn-success">C</button>
 </div>
-<div class="btn-group btn-toolbar">
-<button type="button" class="btn btn-alert">C</button>
-<button type="button" class="btn btn-alert">H</button>
+<div class="btn-group btn-toolbar" role="group">
+<button type="button" class="btn btn-warning">H</button>
+<button type="button" class="btn btn-warning">A</button>
 </div>
-<div class="btn-group btn-toolbar">
-<button type="button" class="btn btn-danger">A</button>
+<div class="btn-group btn-toolbar" role="group">
 <button type="button" class="btn btn-danger">M</button>
+</div>
 </div>
 <br>
 <div class="btn-group dropdown" role="group">
@@ -162,33 +164,39 @@
 <br>
 
 <h4>BONUS</h4>
-<div class="card">
+<div class="row">
+  <div class="col-sm-4 mb-3 mb-sm-0">
+<div class="card" style="width: 18rem;">
     <div class="card-body">
-        <h1>Rome</h1>
-        <img src="rome.jpg" class="card-img-top" style="width: 400px; height: 400px;" alt="Romeimg">
+      <h3 class="card-title">Rome</h3>
+        <img src="rome.jpg" class="card-img-top"  alt="Romeimg">
         <p class="card-text">ROME, is the capital city of Italy. 
             It is also the capital of the Lazio region, the centre of the Metropolitan City of Rome.</p>
         <a href="https://en.wikipedia.org/wiki/Rome" class="btn btn-primary">More details about Rome</a>            
     </div>
   </div>
-  <br>
-  <div class="card">
+</div>
+<div class="col-sm-4 mb-3 mb-sm-0">
+  <div class="card" style="width: 18rem;">
     <div class="card-body">
-        <h1>Albany</h1>
-        <img src="albany.jpg" class="card-img-top" style="width: 400px; height: 400px;" alt="Albanyimg">
+      <h3 class="card-title">Albany</h3>
+        <img src="albany.jpg" class="card-img-top" alt="Albanyimg">
         <p class="card-text">ALBANY, is the capital city of the U.S. state of New York and the seat of Albany County. 
             It is located on the west bank of the Hudson River.</p>
         <a href="https://en.wikipedia.org/wiki/Albany" class="btn btn-primary">More details about Albany</a>    
     </div>
   </div>
-  <br>
-  <div class="card">
+</div>
+<div class="col-sm-4 mb-3 mb-sm-0">
+  <div class="card" style="width: 18rem;">
     <div class="card-body">
-        <h1>Cannes</h1>
-        <img src="cannes.jpg" class="card-img-top" style="width: 400px; height: 400px;" alt="Cannesimg">
+      <h3 class="card-title">Cannes</h3>
+        <img src="cannes.jpg" class="card-img-top"  alt="Cannesimg">
         <p class="card-text">CANNES, a resort town on the French Riviera, is famed for its international film festival.</p>
         <a href="https://en.wikipedia.org/wiki/Cannes" class="btn btn-primary">More details about Cannes</a>
     </div>
   </div>
+</div>
+</div>
 </body>
 </html>
